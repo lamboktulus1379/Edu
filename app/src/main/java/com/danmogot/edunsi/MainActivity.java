@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView ivOrganik, ivAnorganik, ivPlastikTwo, ivLogam, ivKaca, ivPlastik, ivKertasTumbuhan;
 
     int current_miss = 0;
-    int current_scoress = 0;
+    int current_scores = 0;
 
 
     private float ivOneX, ivOneY;
@@ -345,7 +345,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (level == 3) {
-            mTimeLeftInMillis = 180000;
+            mTimeLeftInMillis = 300000;
             img_rubbish = new String[]{
                     "akart",
                     "botolk",
@@ -369,7 +369,7 @@ public class MainActivity extends AppCompatActivity {
                     "rumput2t",
             };
         } else if (level == 2) {
-            mTimeLeftInMillis = 300000;
+            mTimeLeftInMillis = 420000;
             img_rubbish = new String[]{
                     "akarto",
                     "batu2ba",
@@ -400,7 +400,7 @@ public class MainActivity extends AppCompatActivity {
                     "rumput2to",
             };
         } else {
-            mTimeLeftInMillis = 420000;
+            mTimeLeftInMillis = 480000;
             img_rubbish = new String[]{
                     "akarto",
                     "batu2ba",
@@ -1025,9 +1025,9 @@ public class MainActivity extends AppCompatActivity {
                                 soundPlayer.playHitBlackSound();
                                 current_miss = miss;
                             }
-                            if (score > current_scoress) {
+                            if (score > current_scores) {
                                 soundPlayer.playHitOrangeSound();
-                                current_scoress = score;
+                                current_scores = score;
                             }
 
                             if (miss == 3) {
@@ -4519,9 +4519,9 @@ public class MainActivity extends AppCompatActivity {
                     soundPlayer.playHitBlackSound();
                     current_miss = miss;
                 }
-                if (score > current_scoress) {
+                if (score > current_scores) {
                     soundPlayer.playHitOrangeSound();
-                    current_scoress = score;
+                    current_scores = score;
                 }
 
                 if (miss == 3) {

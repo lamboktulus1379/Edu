@@ -55,7 +55,12 @@ public class WinLose extends AppCompatActivity {
         message = getIntent().getStringExtra("message");
         level = getIntent().getIntExtra("level", 0);
         score = getIntent().getIntExtra("score", 0);
-        time = getIntent().getLongExtra("time", 1) / 1000;
+        Long stime = getIntent().getLongExtra("time", 1);
+        if (stime >= 1000L) {
+            time = stime / 1000L;
+        } else {
+            time = stime;
+        }
         tvMessage.setText("Highscore: " + score + " Level: " + level);
 
         String[] scoreSplit = currentScore.split(",");
@@ -110,12 +115,12 @@ public class WinLose extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                Toast.makeText(WinLose.this, response, Toast.LENGTH_SHORT).show();
+                Log.d("Response", response);
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(WinLose.this, "error Update Score" + error.toString(), Toast.LENGTH_LONG).show();
+                Log.d("Error", error.toString());
             }
         }) {
             @Override

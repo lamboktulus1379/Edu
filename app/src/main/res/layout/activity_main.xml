@@ -331,7 +331,7 @@
                     android:gravity="center"
                     android:text="Organik"
                     android:textColor="@android:color/white"
-                    android:textSize="8sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -362,7 +362,7 @@
                     android:gravity="center"
                     android:text="Anorganik"
                     android:textColor="@android:color/white"
-                    android:textSize="8sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -395,7 +395,7 @@
                     android:gravity="center"
                     android:text="Plastik"
                     android:textColor="@android:color/white"
-                    android:textSize="8sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -426,7 +426,7 @@
                     android:gravity="center"
                     android:text="Logam"
                     android:textColor="@android:color/white"
-                    android:textSize="8sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -456,7 +456,7 @@
                     android:gravity="center"
                     android:text="Kaca"
                     android:textColor="@android:color/white"
-                    android:textSize="8sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -486,7 +486,7 @@
                     android:gravity="center"
                     android:text="Plastik"
                     android:textColor="@android:color/white"
-                    android:textSize="8sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -518,7 +518,7 @@
                     android:gravity="center"
                     android:text="Tumbuhan"
                     android:textColor="@android:color/white"
-                    android:textSize="8sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <ImageView
