@@ -168,7 +168,6 @@ public class MainActivity extends AppCompatActivity {
     int level;
     int miss = 0;
     private int speed = 5;
-    private SharedPreferences settings;
 
     String idS, levelS, usernameS, scoreS;
 
@@ -346,7 +345,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (level == 3) {
-            mTimeLeftInMillis = 480000;
+            mTimeLeftInMillis = 180000;
             img_rubbish = new String[]{
                     "akart",
                     "botolk",
@@ -370,7 +369,7 @@ public class MainActivity extends AppCompatActivity {
                     "rumput2t",
             };
         } else if (level == 2) {
-            mTimeLeftInMillis = 600000;
+            mTimeLeftInMillis = 300000;
             img_rubbish = new String[]{
                     "akarto",
                     "batu2ba",
@@ -401,7 +400,7 @@ public class MainActivity extends AppCompatActivity {
                     "rumput2to",
             };
         } else {
-            mTimeLeftInMillis = 900000;
+            mTimeLeftInMillis = 420000;
             img_rubbish = new String[]{
                     "akarto",
                     "batu2ba",
@@ -1048,16 +1047,17 @@ public class MainActivity extends AppCompatActivity {
                             }
 
                             if (score < 0) {
+                                mCountDownTimer.cancel();
                                 Toast.makeText(MainActivity.this, "Level belum berhasil, Coba lagi!", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(MainActivity.this, WinLose.class);
                                 intent.putExtra("message", "Level belum berhasil, Coba lagi!");
                                 intent.putExtra("time", 1);
                                 intent.putExtra("level", level);
-                                intent.putExtra("score", 0);
+                                intent.putExtra("score", highScore);
                                 startActivity(intent);
                             }
 
-                            if (score >= 700 && level == 3) {
+                            if (score >= 1000 && level == 3) {
                                 mCountDownTimer.cancel();
                                 if (score > highScore) {
                                     highScore = score;
@@ -1069,7 +1069,7 @@ public class MainActivity extends AppCompatActivity {
                                 intent.putExtra("level", 3);
                                 intent.putExtra("score", highScore);
                                 startActivity(intent);
-                            } else if (score >= 300 && level == 2) {
+                            } else if (score >= 700 && level == 2) {
                                 mCountDownTimer.cancel();
                                 if (score > highScore) {
                                     highScore = score;
@@ -1081,7 +1081,7 @@ public class MainActivity extends AppCompatActivity {
                                 intent.putExtra("level", 2);
                                 intent.putExtra("score", highScore);
                                 startActivity(intent);
-                            } else if (score >= 150 && level == 1) {
+                            } else if (score >= 500 && level == 1) {
                                 mCountDownTimer.cancel();
                                 Toast.makeText(MainActivity.this, "Level 1 berhasil!", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(MainActivity.this, WinLose.class);
@@ -4542,16 +4542,17 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (score < 0) {
+                    mCountDownTimer.cancel();
                     Toast.makeText(MainActivity.this, "Level belum berhasil, Coba lagi!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, WinLose.class);
                     intent.putExtra("message", "Level belum berhasil, Coba lagi!");
                     intent.putExtra("time", 1);
                     intent.putExtra("level", level);
-                    intent.putExtra("score", 0);
+                    intent.putExtra("score", highScore);
                     startActivity(intent);
                 }
 
-                if (score >= 700 && level == 3) {
+                if (score >= 1000 && level == 3) {
                     mCountDownTimer.cancel();
                     if (score > highScore) {
                         highScore = score;
@@ -4563,7 +4564,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("level", 3);
                     intent.putExtra("score", highScore);
                     startActivity(intent);
-                } else if (score >= 300 && level == 2) {
+                } else if (score >= 700 && level == 2) {
                     mCountDownTimer.cancel();
                     if (score > highScore) {
                         highScore = score;
@@ -4575,7 +4576,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("level", 2);
                     intent.putExtra("score", highScore);
                     startActivity(intent);
-                } else if (score >= 150 && level == 1) {
+                } else if (score >= 500 && level == 1) {
                     mCountDownTimer.cancel();
                     if (score > highScore) {
                         highScore = score;
