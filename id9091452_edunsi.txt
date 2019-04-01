@@ -1,0 +1,50 @@
+===Database id9091452_edunsi
+
+== Table structure for table admin
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|username|varchar(32)|No|
+|email|varchar(32)|No|
+|password|varchar(32)|No|
+== Dumping data for table admin
+
+|1|edunsi|admin@edunsi.com|edunsi123
+== Table structure for table users
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|username|varchar(32)|No|
+|password|varchar(32)|No|
+|email|varchar(32)|No|
+|score|varchar(255)|No|10,10,10
+|level|varchar(32)|No|1
+|tgl|datetime|No|current_timestamp()
+== Dumping data for table users
+
+|6|user124|user124|user124@gmail.com|66000,10,330|3|2019-03-17 09:37:54
+|17|alberth|alberth1234|alberthzeriko@gmail.com|10,10,10|1|2019-03-24 08:11:05
+|18|liana hutabarat|liana1234|lianahutabarat@gmail.com|20,10,10|1|2019-03-24 14:08:01
+|20|dion rumbo|dion12345|dionrumahorbo81@gmail.com|81246200,10,10|2|2019-03-26 16:29:56
+|21|samuel simanjuntak|samuel1234|samuelsimanjuntak059@gmail.com|85662500,10,10|2|2019-03-26 16:32:23
+|22|sarda tambunan|sarda1234|sardaf095@gmail.com|83953500,10,10|2|2019-03-27 14:58:32
+|23|andina marpaung|andina1234|asdmarpaung@gmail.com|83378400,101647000,230|3|2019-03-27 15:01:39
+|24|Rosianna Manurung|anna1234|rosiannamnrg@gmail.com|86186000,10,10|2|2019-03-27 15:11:00
+|25|Imelda Simorangkir|melda1234|Imeldasimorangkir34@yahoo.com|82877500,10,10|2|2019-03-27 15:14:04
+|27|newuser|new|newuser@gmail.com|10,10,10|1|2019-03-27 21:25:50
+|28|helen|helen1234|helenfrisely925@gmail.com|139300,10,10|2|2019-03-31 15:22:55
+|29|helen frisely|helen1234|helenfrisely925@gmail.com|10,10,10|1|2019-04-01 03:15:43
+== Table structure for table user_log
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|id_user|int(11)|No|
+|tgl_bermain|datetime|No|
+== Dumping data for table user_log
+
