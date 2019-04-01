@@ -68,20 +68,17 @@ public class WinLose extends AppCompatActivity {
 
 
         if (level == 1) {
-
-            if (score >= 100) {
+            if (score >= 200) {
                 level = 2;
             }
-
-
             scoreSplit[0] = String.valueOf(time * score);
         } else if (level == 2  ) {
-            if (score >= 200) {
+            if (score >= 300) {
                 level = 3;
             }
             scoreSplit[1] = String.valueOf(time * score);
         } else if (level == 3  ) {
-            if (score >= 1000) {
+            if (score >= 400) {
                 level = 3;
             }
             scoreSplit[2] = String.valueOf(time * score);
@@ -106,15 +103,6 @@ public class WinLose extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://helenfrisely.000webhostapp.com/edunsi.php", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                try {
-                    JSONArray jsonArray = new JSONArray(response);
-
-                    JSONObject jsonObject = jsonArray.getJSONObject(0);
-
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
                 Log.d("Response", response);
             }
         }, new Response.ErrorListener() {

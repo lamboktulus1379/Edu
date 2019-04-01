@@ -95,10 +95,11 @@ public class Login extends Fragment {
                                 Toast.makeText(getActivity(), "Login gagal, Coba lagi atau Silahkan register terlebih dahulu", Toast.LENGTH_SHORT).show();
                             }
 
-
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+
+                        Log.d("Response", "res" + response);
                     }
                 }, new Response.ErrorListener() {
                     @Override
@@ -110,8 +111,8 @@ public class Login extends Fragment {
                     protected Map<String, String> getParams() throws AuthFailureError {
                         Map<String, String> params = new HashMap<>();
                         params.put("q", "login");
-                        params.put("email", etEmail.getText().toString());
-                        params.put("password", etPassword.getText().toString());
+                        params.put("email", etEmail.getText().toString().trim());
+                        params.put("password", etPassword.getText().toString().trim());
                         return params;
                     }
                 };

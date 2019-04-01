@@ -369,7 +369,7 @@ public class MainActivity extends AppCompatActivity {
                     "rumput2t",
             };
         } else if (level == 2) {
-            mTimeLeftInMillis = 420000;
+            mTimeLeftInMillis = 240000;
             img_rubbish = new String[]{
                     "akarto",
                     "batu2ba",
@@ -400,7 +400,7 @@ public class MainActivity extends AppCompatActivity {
                     "rumput2to",
             };
         } else {
-            mTimeLeftInMillis = 480000;
+            mTimeLeftInMillis = 180000;
             img_rubbish = new String[]{
                     "akarto",
                     "batu2ba",
@@ -930,7 +930,7 @@ public class MainActivity extends AppCompatActivity {
                 if (mTimerRunning) {
                     pauseTimer();
                 } else {
-                    mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
+                    mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 500) {
                         @Override
                         public void onTick(long millisUntilFinished) {
                             mTimeLeftInMillis = millisUntilFinished;
@@ -1057,7 +1057,7 @@ public class MainActivity extends AppCompatActivity {
                                 startActivity(intent);
                             }
 
-                            if (score >= 1000 && level == 3) {
+                            if (score >= 400 && level == 3) {
                                 mCountDownTimer.cancel();
                                 if (score > highScore) {
                                     highScore = score;
@@ -1069,7 +1069,7 @@ public class MainActivity extends AppCompatActivity {
                                 intent.putExtra("level", 3);
                                 intent.putExtra("score", highScore);
                                 startActivity(intent);
-                            } else if (score >= 700 && level == 2) {
+                            } else if (score >= 300 && level == 2) {
                                 mCountDownTimer.cancel();
                                 if (score > highScore) {
                                     highScore = score;
@@ -1081,7 +1081,7 @@ public class MainActivity extends AppCompatActivity {
                                 intent.putExtra("level", 2);
                                 intent.putExtra("score", highScore);
                                 startActivity(intent);
-                            } else if (score >= 500 && level == 1) {
+                            } else if (score >= 200 && level == 1) {
                                 mCountDownTimer.cancel();
                                 Toast.makeText(MainActivity.this, "Level 1 berhasil!", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(MainActivity.this, WinLose.class);
@@ -4428,7 +4428,7 @@ public class MainActivity extends AppCompatActivity {
         getY();
         setVisibility();
 
-        mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
+        mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 500) {
             @Override
             public void onTick(long millisUntilFinished) {
                 mTimeLeftInMillis = millisUntilFinished;
@@ -4552,7 +4552,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
 
-                if (score >= 1000 && level == 3) {
+                if (score >= 400 && level == 3) {
                     mCountDownTimer.cancel();
                     if (score > highScore) {
                         highScore = score;
@@ -4564,7 +4564,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("level", 3);
                     intent.putExtra("score", highScore);
                     startActivity(intent);
-                } else if (score >= 700 && level == 2) {
+                } else if (score >= 300 && level == 2) {
                     mCountDownTimer.cancel();
                     if (score > highScore) {
                         highScore = score;
@@ -4576,7 +4576,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("level", 2);
                     intent.putExtra("score", highScore);
                     startActivity(intent);
-                } else if (score >= 500 && level == 1) {
+                } else if (score >= 200 && level == 1) {
                     mCountDownTimer.cancel();
                     if (score > highScore) {
                         highScore = score;
