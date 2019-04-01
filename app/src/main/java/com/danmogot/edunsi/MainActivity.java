@@ -1033,7 +1033,7 @@ public class MainActivity extends AppCompatActivity {
                             if (miss == 3) {
                                 int color = R.color.colorForegroundHigh;
                                 gameFrame.setForeground(new ColorDrawable(ContextCompat.getColor(getBaseContext(), color)));
-                            } else if (miss == 7) {
+                            } else if (miss == 5) {
                                 if (score > highScore) {
                                     highScore = score;
                                 }
@@ -4527,7 +4527,7 @@ public class MainActivity extends AppCompatActivity {
                 if (miss == 3) {
                     int color = R.color.colorForegroundHigh;
                     gameFrame.setForeground(new ColorDrawable(ContextCompat.getColor(getBaseContext(), color)));
-                } else if (miss == 7) {
+                } else if (miss == 5) {
                     mCountDownTimer.cancel();
                     if (score > highScore) {
                         highScore = score;
