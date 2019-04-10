@@ -12,18 +12,23 @@
     <string name="tab_user">Users</string>
     <string name="title_activity_help">Help</string>
     <string name="large_text">
-       Edunsi...
+        Selamat datang di game Edunsi.\n\n
+       Edunsi merupakan permaninan betema lingkungan.\n\n
 
-        Cara bermain
+        Cara bermain:\n
 
-        1. Drag Sampah hingga mengenai tempat sampah.
-        2. Jika jenis sampah sesuai dengan tempat sampah, make score bertambah.
-        3. Jika score tercapai, level berikutnya akan terbuka.
-        4. Jika jenis sampah tidak sesuai dengan tempat sampah, maka miss bertambah.
-        5. Jika miss lebih besar dari 3, maka screen berubah menjadi lebih gelap.
-        6. Jika miss sama dengan 5, maka permainan akan berakhir.
-        7. Score tertinggi akan disimpan sesuai dengan level.
+        1. Drag Sampah hingga mengenai tempat sampah.\n
+        2. Jika jenis sampah sesuai dengan tempat sampah, make score bertambah.\n
+        3. Jika score tercapai, level berikutnya akan terbuka.\n
+        4. Jika jenis sampah tidak sesuai dengan tempat sampah, maka miss bertambah.\n
+        5. Jika miss lebih besar dari 3, maka screen berubah menjadi lebih gelap.\n
+        6. Jika miss sama dengan 5, maka permainan akan berakhir.\n
+        7. Score tertinggi akan disimpan sesuai dengan level.\n\n
+
+        Sebelum Anda bermain, Anda harus mengetahui jenis-jenis sampah terlebih dahulu.\n\n
+        Klik tombol Selanjutnya.
     </string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_tutorial">Tutorial</string>
 </resources>

@@ -6,8 +6,10 @@
     <color name="colorForeground">#2C1F2E41</color>
     <color name="colorForegroundHigh">#8C0A3061</color>
     <color name="colorForegroundStandard">#54314763</color>
+    <color name="colorOrange">#FFBB33</color>
 
     <color name="black_overlay">#66000000</color>
     <color name="colorContet">#6F000000</color>
     <color name="colorHeader">#71609E68</color>
+    <color name="colorInput">#F2F2F2</color>
 </resources>

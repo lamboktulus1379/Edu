@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/game_screen"
     android:orientation="vertical"
-    tools:context="com.danmogot.edunsi.MainActivity">
+    tools:context="com.danmogot.edunsi100.MainActivity">
 
 
     <android.support.constraint.ConstraintLayout

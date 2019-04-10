@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash"
     android:foreground="@color/colorForegroundStandard"
-    tools:context="com.danmogot.edunsi.Help">
+    tools:context="com.danmogot.edunsi100.Help">
 
     <Button
         android:id="@+id/btnPlay"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.danmogot.edunsi">
+    package="com.danmogot.edunsi100">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,34 +12,31 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="com.danmogot.edunsi.Help">
-
-        </activity>
-        <activity android:name="com.danmogot.edunsi.Level" />
+        <activity android:name=".Tut"></activity>
+        <activity android:name=".Help" />
+        <activity android:name=".Level" />
         <activity
-            android:name="com.danmogot.edunsi.Admin"
+            android:name=".Admin"
             android:label="@string/title_activity_admin"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name="com.danmogot.edunsi.Root" />
+        <activity android:name=".Root" />
         <activity
-            android:name="com.danmogot.edunsi.LoginRegister"
+            android:name=".LoginRegister"
             android:icon="@drawable/logo"
             android:label="@string/title_activity_login_register"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name="com.danmogot.edunsi.Splash">
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.danmogot.edunsi.WinLose" />
+        <activity android:name=".WinLose" />
         <activity
-            android:name="com.danmogot.edunsi.MainActivity"
+            android:name=".MainActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
